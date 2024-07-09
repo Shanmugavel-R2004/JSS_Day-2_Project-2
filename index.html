@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy2opWau1IkiKsSMlb6Qw2JgA1lPtWLrwUEA&s">
+</head>
+<body>
+   <center><div id="name"><h1>Calculator</h1></div><hr><br>
+    <input id="result"type="text" id="display"><br>
+    <div class="keys"><center>
+    <table>
+        <tr>
+            <td><button onclick="append(7)">7</button></td>
+            <td><button onclick="append(8)">8</button></td>
+            <td><button onclick="append(9)">9</button></td>     
+            <td><button id="id2" onclick="clearresult('c')">C</button></td>             
+        </tr>
+        <tr>
+            <td><button onclick="append(4)">4</button></td>
+            <td><button onclick="append(5)">5</button></td>
+            <td><button onclick="append(6)">6</button></td>
+            <td><button id="id3" onclick="operation('/')"> / </button></td>
+        </tr>
+        <tr>
+            <td><button onclick="append(1)">1</button></td>
+            <td><button onclick="append(2)">2</button></td>
+            <td><button onclick="append(3)">3</button></td>
+            <td><button id="id4" onclick="operation('*')">*</button></td>
+        </tr>
+        <tr> 
+            <td><button id="id1" onclick="operation('-')">-</button></td>           
+            <td><button onclick="append(0)">0</button></td>  
+            <td><button onclick="operation('+')">+</button></td>
+            <td><button onclick="calculate('=')">=</button></td>     
+        </tr>   
+        <tr>
+            <td><button id="id6" onclick="operation('%')">%</button></td>
+            <td><button id="id7" onclick="operation('**')">**</button></td>
+        </tr>   
+    </table>
+</div>
+</center> 
+    <script src="./script.js"></script>
+</body>
+</html>
